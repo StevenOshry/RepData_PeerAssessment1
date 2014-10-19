@@ -1,25 +1,15 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+title: "Reproducible Research Peer Assessment 1"
+author: "Steven Oshry"
+date: "Saturday, October 18, 2014"
+output: html_document
 ---
+First, read in activity data.  This part assumes we have set the working directory 
+to where there is a subdirectory "data" that contains the file
+activity.csv
 
 
-## Loading and preprocessing the data
+```{r}
+DT <- read.csv("./data/activity.csv", header= TRUE)
 
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
+```
